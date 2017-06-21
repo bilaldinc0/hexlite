@@ -28,5 +28,5 @@ script:
   - export PYTHONUSERBASE=~/.local/
   - export PATH=$PATH:~/.local/bin
   - chmod +x tests/run-tests.sh
-  - cd test/
+  - cd tests/
   - tests/run-tests.sh
