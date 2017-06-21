@@ -13,10 +13,10 @@ before_install:
   - sudo apt-get install tar
   - sudo apt-get install gzip
   - sudo apt-get install cmake
-  - sudo apt-get libpython3-dev
-  - sudo apt-get bison
-  - sudo apt-get re2c
-  - sudo apt-get g++
+  - sudo apt-get install libpython3-dev
+  - sudo apt-get install bison
+  - sudo apt-get install re2c
+  - sudo apt-get install g++
 
 install:
   - python3 setup.py develop --user
