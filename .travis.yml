@@ -29,4 +29,4 @@ script:
   - export PATH=$PATH:~/.local/bin
   - chmod +x tests/run-tests.sh
   - cd tests/
-  - tests/run-tests.sh
+  - ./run-tests.sh
