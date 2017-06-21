@@ -5,6 +5,7 @@ python:
 
 sudo: required
 dist: trusty
+group: edge
 
 
 before_install:
