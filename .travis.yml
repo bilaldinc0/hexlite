@@ -20,7 +20,7 @@ before_install:
   - sudo apt-get install g++
 
 install:
-  - python3 setup.py develop --user
+  - python setup.py develop --user
 
 script:
   - export PYTHONUSERBASE=~/.local/
