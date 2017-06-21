@@ -18,16 +18,16 @@ before_install:
   - sudo apt-get install bison
   - sudo apt-get install re2c
   - sudo apt-get install g++
-  - pip install -U pip setuptools 
+  - sudo apt-get install python3-setuptools
 
 
 install:
   - sudo python3 setup.py develop --user
 
 script:
-  - hexlite
   - export PYTHONUSERBASE=~/.local/
   - export PATH=$PATH:~/.local/bin
   - chmod +x tests/run-tests.sh
+  - hexlite
   - cd tests/
   - ./run-tests.sh
