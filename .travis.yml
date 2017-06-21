@@ -6,11 +6,6 @@ python:
 sudo: required
 dist: trusty
 
-branches:
-  only:
-  - master
-  - Temp
-
 
 before_install:
   - sudo apt-get -qq update
