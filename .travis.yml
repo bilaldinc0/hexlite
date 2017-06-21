@@ -25,6 +25,7 @@ install:
   - sudo python3 setup.py develop --user
 
 script:
+  - hexlite
   - export PYTHONUSERBASE=~/.local/
   - export PATH=$PATH:~/.local/bin
   - chmod +x tests/run-tests.sh
