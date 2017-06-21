@@ -36,6 +36,7 @@ class InstallerBase:
 
   def prompt_user(self, message):
     msg(message)
+    return True
     if self.allyes:
       return True
     answer = None

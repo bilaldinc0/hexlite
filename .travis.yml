@@ -1,0 +1,34 @@
+language: python
+
+python:
+  - "3.5"
+
+sudo: required
+dist: trusty
+
+branches:
+  only:
+  - master
+  - Temp
+
+
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install wget
+  - sudo apt-get install tar
+  - sudo apt-get install gzip
+  - sudo apt-get install cmake
+  - sudo apt-get libpython3-dev
+  - sudo apt-get bison
+  - sudo apt-get re2c
+  - sudo apt-get g++
+
+install:
+  - python3 setup.py develop --user
+
+script:
+  - export PYTHONUSERBASE=~/.local/
+  - export PATH=$PATH:~/.local/bin
+  - chmod +x tests/run-tests.sh
+  - cd test/
+  - tests/run-tests.sh
