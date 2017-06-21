@@ -18,7 +18,7 @@ before_install:
   - sudo apt-get install bison
   - sudo apt-get install re2c
   - sudo apt-get install g++
-  - sudo apt-get install python3-setuptools
+  - pip install -U pip setuptools 
 
 
 install:
