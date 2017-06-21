@@ -22,12 +22,12 @@ before_install:
 
 
 install:
-  - sudo python3 setup.py develop --user
+  - python3 setup.py develop --user
 
 script:
   - export PYTHONUSERBASE=~/.local/
   - export PATH=$PATH:~/.local/bin
-  - chmod +x tests/run-tests.sh
   - hexlite
+  - chmod +x tests/run-tests.sh
   - cd tests/
   - ./run-tests.sh
